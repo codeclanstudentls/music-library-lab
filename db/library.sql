@@ -18,10 +18,11 @@ artist_id INT8 references artists(id)
 
 CREATE TABLE tracks(
   id SERIAL8 primary key,
-  album_id INT8 references albums(id)
-  track_title VARCHAR(255),
-  -- playtime TIME()
+  album_id INT8 references albums(id),
+  track_title VARCHAR(255)
 );
+
+-- playtime TIME()
 
 -- CREATE TABLE labels(
 --   id SERIAL8 primary key,

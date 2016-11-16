@@ -72,9 +72,16 @@ track3 = Track.new({
   'album_id' => track_id
   })
 
+track4 = Track.new({
+  'track_title' => 'The Mutant Gillmen',
+  'track_id' => artist7.id,
+  'album_id' => track_id
+  })
+
 track1.save()
 track2.save()
 track3.save()
+track4.save()
 
 
 #album2.delete()
@@ -87,7 +94,7 @@ albums = Album.all()
 
 artists = Artist.all()
 
-#tracks = Tracks.all()
+tracks = Track.all()
 
 binding.pry
 nil
