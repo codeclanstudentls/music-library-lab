@@ -35,6 +35,12 @@ class Artist
     return find_album.map { |album| Album.new(album) }
   end
 
+  def find_track_title
+      sql = "SELECT track_title FROM tracks WHERE album_id = #{@id} ;"
+      find_track_title = SqlRunner.run(sql)
+      return find_track_title.map { |track| Track.new(track) }
+  end
+
 
 
 end
