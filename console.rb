@@ -13,21 +13,25 @@ artist1.save()
 artist2.save()
 
 album1 = Album.new({
-  'artist_id' => artist1.id,
   'title' => 'Dark Side of the Moon',
-  'genre' => 'Prog Rock'
+  'genre' => 'Prog Rock',
+  'year' => 1973,
+  'artist_id' => artist1.id
   })
 
-album2 = Album.new({
-  'artist_id' => artist2.id,
+album2 = Album.new({ 
   'title' => 'Thriller',
-  'genre' => 'Pop'
+  'genre' => 'Pop',
+  'year' => 1982,
+  'artist_id' => artist2.id
   })
 
 album3 = Album.new({
-  'artist_id' => artist1.id,
+
   'title' => 'Wish You Were Here',
-  'genre' => 'Prog Rock'
+  'genre' => 'Prog Rock',
+  'year' => 1975,
+  'artist_id' => artist1.id
   })
 
 album1.save()
